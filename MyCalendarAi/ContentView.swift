@@ -85,7 +85,7 @@ struct ContentView: View {
     }
         
     func sendPrompt(_ event: EventCalendar) async throws {
-        let openAI = OpenAIKit(apiToken: "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")
+        let openAI = OpenAIKit(apiToken: "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")
         
         
         let prompt = event.notes
