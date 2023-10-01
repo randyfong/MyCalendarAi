@@ -14,6 +14,7 @@
 		C26944A82ACA091800A5D762 /* MyCalendarAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26944A72ACA091800A5D762 /* MyCalendarAiTests.swift */; };
 		C26944B22ACA091800A5D762 /* MyCalendarAiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26944B12ACA091800A5D762 /* MyCalendarAiUITests.swift */; };
 		C26944B42ACA091800A5D762 /* MyCalendarAiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26944B32ACA091800A5D762 /* MyCalendarAiUITestsLaunchTests.swift */; };
+		C26944C22ACA09C600A5D762 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = C26944C12ACA09C600A5D762 /* OpenAIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26944C22ACA09C600A5D762 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = MyCalendarAi;
+			packageProductDependencies = (
+				C26944C12ACA09C600A5D762 /* OpenAIKit */,
+			);
 			productName = MyCalendarAi;
 			productReference = C26944932ACA091700A5D762 /* MyCalendarAi.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = C269448A2ACA091700A5D762;
+			packageReferences = (
+				C26944C02ACA09C600A5D762 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = C26944942ACA091700A5D762 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -420,6 +428,7 @@
 				DEVELOPMENT_TEAM = T6XWAR3GT9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Requires Access to Calendar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +458,7 @@
 				DEVELOPMENT_TEAM = T6XWAR3GT9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Requires Access to Calendar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C26944C02ACA09C600A5D762 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FuturraGroup/OpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C26944C12ACA09C600A5D762 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C26944C02ACA09C600A5D762 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C269448B2ACA091700A5D762 /* Project object */;
 }
